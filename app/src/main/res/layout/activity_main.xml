@@ -1,0 +1,107 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewDeck"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:src="@drawable/card_back"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <Button
+        android:id="@+id/buttonDrawCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karte ziehen"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <Button
+        android:id="@+id/buttonPlayCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karte spielen"
+        tools:layout_editor_absoluteX="225dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <!-- Platzhalter für die Handkarten von Spieler 1 -->
+
+    <!-- Fügen Sie ImageView für imageViewPlayer1Card2 bis imageViewPlayer1Card5 hinzu -->
+    <!-- Beispiel für die zweite Karte, die sich an die erste Karte anschließt -->
+
+    <!-- Wiederholen Sie dies für imageViewPlayer1Card3, imageViewPlayer1Card4 und imageViewPlayer1Card5 -->
+
+    <!-- Horizontale Guideline, die die Position der Spielerhand definiert -->
+
+    <ImageView
+        android:id="@+id/imageViewPlayer1Card1"
+        android:layout_width="93dp"
+        android:layout_height="110dp"
+        android:src="@drawable/card_1"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="486dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPlayer1Card2"
+        android:layout_width="95dp"
+        android:layout_height="112dp"
+        android:src="@drawable/card_1"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="486dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPlayer1Card3"
+        android:layout_width="93dp"
+        android:layout_height="110dp"
+        android:src="@drawable/card_1"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="605dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPlayer1Card4"
+        android:layout_width="93dp"
+        android:layout_height="110dp"
+        android:src="@drawable/card_1"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="605dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPlayer1Card5"
+        android:layout_width="93dp"
+        android:layout_height="110dp"
+        android:src="@drawable/card_1"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="605dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/playerHandGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="469dp" />
+
+    <!-- Hier würden die ImageView für die restlichen Karten folgen -->
+    <!-- Play Zone Bereich, in dem die gespielte Karte des Spielers angezeigt wird -->
+    <FrameLayout
+        android:id="@+id/playZone"
+        android:layout_width="100dp"
+        android:layout_height="137dp"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="164dp">
+
+        <!-- Innerhalb dieses FrameLayouts können Sie die gespielten Karten dynamisch hinzufügen -->
+        <!-- Zum Beispiel: -->
+        <ImageView
+            android:id="@+id/imageViewPlayedCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/card_1" />
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
